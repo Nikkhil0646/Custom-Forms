@@ -1,69 +1,108 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Articulat CF V2", sans-serif;
+}
 
-.regis_wrapper{
-    background: rgb(22,146,70);
-    background: linear-gradient(90deg, rgba(22,146,70,1) 0%, rgba(0,212,255,1) 100%);
+.regis_wrapper {
+    background: #40E0D0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 1000px;
-    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.regis_form{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
+.regis_form {
     background: white;
-    padding: 40px 45px 40px 45px;
-    border-radius: 10px;
+    padding: 40px 45px;
+    border-radius: 20px;
     font-size: 17px;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-
+    letter-spacing: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    max-width: 500px;
+    overflow: hidden;
+    width: 50%;
+    user-select: none;
+    transition: background-color 0.6s;
 }
 
-.heading{
-    left: 50%;
-    right: 50%;
-    font-weight: bold ;
-    font-style: normal;
+.regis_form:hover {
+    background-color: #676c72;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
     font-size: 32px;
     letter-spacing: 2px;
+    margin-bottom: 35px;
+    user-select: none; 
 }
 
 .regis_form label {
     font-size: 17px;
-    font-family: sans-serif;
     letter-spacing: 1px;
+    display: block; 
+    margin-bottom: 5px;
+    user-select: none;
 }
 
 .regis_form input {
-    width: 230px;
+    width: 100%;
     height: 30px;
     border: none;
     background: #ddd;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); 
+    cursor: text;
+    user-select: text;
+    transition: color 0.3s;
+}
+
+.regis_form:hover{
+    color: #dbdbdb;
 }
 
 .subButton button {
-    padding: 10px 20px;
+    padding: 10px 15px;
     background: lightskyblue;
-    border-radius: 10px;
-    border: none;
+    border-radius: 8px;
+    font-weight: 200px;
+    border: .5px #2a8bb5;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5); 
+    font-size: 15px;
+    cursor: pointer; 
+    width: auto; 
+    transition: all 0.3s; 
 }
+
+.subButton button:hover {
+    background: #c2e59c;  
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c); 
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+    color: white;
+}
+
 
 .subButton {
     text-align: center;
 }
 
-
-
-
+@media (max-width: 360px) {
+   
+    .regis_form {
+        width: 55%; 
+    }
+}
