@@ -39,7 +39,7 @@ body {
 }
 
 .regis_form:hover {
-    background-color: #676c72;
+    background-color: #5a5d61;
 }
 
 .copyright {
@@ -119,6 +119,14 @@ body {
 .subButton {
     text-align: center;
 }
+.copyright {
+    text-align: center;
+    margin-top: -56px;
+    font-size: 18px;
+    color: black;
+    opacity: 13.7;
+}
+
 
 @media screen and (max-width: 600px) {
     .regis_wrapper {
