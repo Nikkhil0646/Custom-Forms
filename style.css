@@ -9,7 +9,7 @@ body {
 }
 
 .regis_wrapper {
-    background: #40E0D0;  /* fallback for old browsers */
+    background: #40E0D0;  
     background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
     background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
     background-repeat: no-repeat;
@@ -100,9 +100,37 @@ body {
     text-align: center;
 }
 
-@media (max-width: 360px) {
-   
+@media screen and (max-width: 600px) {
+    .regis_wrapper {
+        align-items: flex-start; 
+        align-items: center; 
+        min-height: 100vh;
+    }
+    
     .regis_form {
-        width: 55%; 
+        width: 85%; 
+        font-size: 14px;
+        padding: 20px;
+        border-radius: 10px; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    }
+    
+    .heading {
+        font-size: 24px; 
+        margin-bottom: 20px; 
+    }
+    
+    .regis_form label {
+        font-size: 14px; 
+    }
+    
+    .regis_form input {
+        height: 25px;
+        padding: 8px; 
+    }
+    
+    .subButton button {
+        padding: 8px 12px; 
+        font-size: 13px; 
     }
 }
