@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: "Articulat CF V2", sans-serif;
+    font-family: 'Open Sans Display', sans-serif;
+    
 }
 
 .regis_wrapper {
@@ -37,6 +38,23 @@ body {
 
 .regis_form:hover {
     background-color: #676c72;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: -56px;
+    font-size: 18px;
+    color: black;
+    opacity: 13.7;
+}
+
+.logo {
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
 }
 
 .heading {
@@ -134,4 +152,3 @@ body {
         font-size: 13px; 
     }
 }
-
